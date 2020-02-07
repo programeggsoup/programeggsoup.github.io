@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+
+		$(document).ready(()=>{
+
+		    $('#sidebarCollapse').on('click', function() {
+		        $('#sidebar').toggleClass('active');
+		    	$('#sidebar > ul > li > a').addClass("collapse");		    	
+		    	$('#sidebar > ul > li > ul').removeClass("show");
+		    });
+
+		    $('.must-inactive').on('click', function() {
+		    	$('#sidebar').removeClass('active');
+		    })
+
+			$(".demo1").bootstrapNews({
+	            newsPerPage: 3,
+				navigation: true,
+				autoplay: true,
+				direction:'up', // up or down
+				animationSpeed: 'normal',
+				newsTickerInterval: 4000, //4 secs
+				pauseOnHover: true,
+				onStop: null,
+				onPause: null,
+				onReset: null,
+				onPrev: null,
+				onNext: null,
+				onToDo: null
+	        });
+
+		});
+
+	</script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="active">
+          <div class="sidebar-header" id="sidebarCollapse" style="cursor: pointer;" >
+              <h3>导览</h3>
+              <strong><i class="fa fa-bars"></i></strong>
+          </div>
+
+          <ul class="list-unstyled components">
+              <li>
+                  <a href="#column" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle must-inactive">
+                   
+                      <i class="fas fa-list"></i>
+                      <span>栏目</span>
+                  </a>
+                  <ul class="collapse list-unstyled" id="column">
+                      <li>
+                          <a href="#">戒迷社群</a>
+                      </li>
+                      <li>
+                          <a href="#">托学研究</a>
+                      </li>
+                      <li>
+                          <a href="#">文学艺术</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#groups" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle must-inactive">
+                      <i class="fas fa-users"></i>
+                      <span>托迷组织</span>
+          </a>
+          <ul class="collapse list-unstyled" id="groups">
+                      <li>
+                          <a href="#">ArdaNEWS</a>
+                      </li>
+                      <li>
+                          <a href="#">BagEnd字幕组</a>
+                      </li>
+                      <li>
+                          <a href="#">魔戒中文维基</a>
+            </li>
+            <li>
+                          <a href="#">指环王百度贴吧</a>
+                      </li>
+                      <li>
+                          <a href="#">中洲历史讨论群</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#pageSubmenu">
+                      <i class="fas fa-copy"></i>
+                      <span>往期内容下载</span>
+                  </a>
+        </li>
+        <li>
+                  <a href="#pageSubmenu" >
+                      <i class="fas fa-briefcase"></i>
+                      <span>关于我们</span>
+                  </a>
+        </li>
+        <li>
+                  <a href="#pageSubmenu" >
+                      <i class="fas fa-envelope"></i>
+                      <span>意见箱</span>
+                  </a>
+        </li>
+          </ul>
+      </nav>
+      <!--SideBar Ending-->
+
+      <div class="container-fluid">
+        <div class="blog-title">
+          
+        </div>
+      </div>
+    </div>
+  </body>
