@@ -1,0 +1,29 @@
+<!-- 这里是主页上放滚动图的 -->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		{% for item in site.data.carousel %}
+			<li data-target="#carouselExampleCaptions" data-slide-to="{{ item.number }}" {% if item.number == 0 %}class="active"{% endif %}></li>
+		{% endfor %}
+	</ol>
+	<div class="carousel-inner">
+		{% for item in site.data.carousel %}
+			<div class="carousel-item {% if item.number == 0 %}active{% endif %}">
+				<img src="{{ item.src }}" class="d-block w-100" alt="{{ item.title }}">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>{{ item.title }}</h5>
+					<p>{{ item.content }}</p>
+				</div>
+			</div>
+		{% endfor %}
+		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">前一张</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">后一张</span>
+		</a>
+	</div>
+</div>
+
+					
