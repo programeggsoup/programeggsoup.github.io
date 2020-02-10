@@ -1,5 +1,23 @@
 ---
 layout: default
-title: Home
+title: Tolkien Society Chinese Smial
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<div class="wrapper">
+			
+	<!-- Sidebar  -->
+	{% include navLeft.html %}
+
+	<div id="content">
+			
+		<!--carousel-->
+		{% include carousel.html %}
+
+		<!--index blog-->
+		{% include indexblog.html %}
+					
+		<hr>
+		<!-- index news -->
+		{% include indexnews.html %}
+					
+	</div>
+</div>
