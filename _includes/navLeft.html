@@ -1,0 +1,58 @@
+<!-- 这里是所有PC端的导航 -->
+<nav id="sidebar" class="active">
+	<div class="sidebar-header" id="sidebarCollapse" style="cursor: pointer;" >
+		<h3>导览</h3>
+		<strong><i class="fa fa-bars"></i></strong>
+	</div>
+
+	<ul class="list-unstyled components">
+		<li>
+			<a href="#column" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle must-inactive">
+			    <i class="fas fa-list"></i>
+			    <span>栏目</span>
+			</a>
+			<ul class="collapse list-unstyled" id="column">
+			 	{% for item in site.data.column %}
+			 		<li>
+			 			<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+				    		{{ item.name }}
+				    	</a>
+			 		</li>
+				{% endfor %}
+			</ul>
+		</li>
+		<li>
+			<a href="#groups" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle must-inactive">
+			    <i class="fas fa-users"></i>
+			    <span>托迷组织</span>
+			</a>
+			<ul class="collapse list-unstyled" id="groups">
+				{% for item in site.data.groups %}
+			 		<li>
+			 			<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+				    		{{ item.name }}
+				    	</a>
+			 		</li>
+				{% endfor %}
+			</ul>
+		</li>
+		<li>
+			<a href="/download.html">
+			    <i class="fas fa-copy"></i>
+			    <span>往期内容下载</span>
+			</a>
+		</li>
+		<li>
+			<a href="/about.html" >
+			    <i class="fas fa-briefcase"></i>
+			    <span>关于我们</span>
+			</a>
+		</li>
+		<li>
+			<a href="/suggestions.html" >
+				<i class="fas fa-envelope"></i>
+				<span>意见箱</span>
+			</a>
+		</li>
+	</ul>
+</nav>
