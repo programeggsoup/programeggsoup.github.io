@@ -209,11 +209,15 @@ ul ul a {
     }
 }
 
-.card-index{
+.card-index {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.card-index:hover {
+    color: #eee;
+    background-color: #555;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
 
 
 
@@ -239,9 +243,42 @@ ul ul a {
     list-style:none;
 }
 
-.news-item
+.index-news-item
 {
-    padding:4px 4px;
-    margin:0px;
-    border-bottom:1px dotted #555; 
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.index-new-title {
+    text-align: left !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.index-news-panel {
+    margin: 10px 0; 
+    border: 1px dashed black; 
+    border-radius: 10px; 
+    padding: 20px 30px 10px 40px;
+}
+
+.news-page {
+    text-decoration: none;
+    border-radius: 20%;
+    background-color: #eee;
+    color: black;
+    border: none;
+}
+
+.news-page:hover {
+    color: white;
+    background-color: #666;
+}
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
