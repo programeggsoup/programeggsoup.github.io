@@ -50,6 +50,14 @@
 		</script>
 	</head>
 	<body>
-		{{ content }}
+		<div class="wrapper">
+			
+			<!-- Sidebar  -->
+			{% include navLeft.html %}
+
+			<div id="content">
+				{{ content }}
+			</div>
+		</div>
     </body>
 </html>
