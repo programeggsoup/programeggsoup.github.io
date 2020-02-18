@@ -1,0 +1,26 @@
+<!-- 关于我们页面上各组的简单介绍，可以直通车到妥迷组织 -->
+<div class="container-fluid">
+{% assign config = site.data.config %}
+	<div class="row">
+		{% for item in site.data.briefintro %}
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="brief-intro">
+					<div class="card">
+					<img class="card-img-top brief-intro-img" src="{{ item.img }}" alt="{{ item.name }}">
+					<div class="card-body">
+					    <h5 class="card-title">{{ item.name }}</h5>
+					   	<p class="card-text  brief-intro-text">{{ item.content }}</p>
+					</div>
+					<div class="card-footer">
+					    <small class="text-muted">{{ item.update }}</small>
+					</div>
+				</div>
+				<a href="{{ config.firstLevel | append: item.link }}" class="brief-intro-middle">
+					<button class="btn">发现更多</button>
+				</a>
+				</div>
+				
+			</div>
+		{% endfor %}
+	</div>
+</div>

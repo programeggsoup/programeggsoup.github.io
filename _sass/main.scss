@@ -2,13 +2,13 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
     background: #fafafa;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-family: '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
@@ -51,7 +51,7 @@ a, a:hover, a:focus {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
     display: block;
 }
 #sidebar ul li a:hover {
@@ -64,7 +64,7 @@ a, a:hover, a:focus {
     background: #6d7fcc;
 }
 ul ul a {
-    font-size: 0.9em !important;
+    font-size: 1em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
 }
@@ -97,13 +97,13 @@ ul ul a {
 #sidebar.active ul li a {
     padding: 20px 10px;
     text-align: center;
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 #sidebar.active ul li a > i {
     margin-right:  0;
     display: block;
-    font-size: 1.8em;
+    font-size: 1em;
     margin-bottom: 5px;
 }
 
@@ -172,13 +172,13 @@ ul ul a {
     /* Downsize the navigation links font size */
     #sidebar ul li a {
         padding: 20px 10px;
-        font-size: 0.85em;
+        font-size: 1em;
     }
 
     #sidebar ul li a > i {
         margin-right:  0;
         display: block;
-        font-size: 1.8em;
+        font-size: 1em;
         margin-bottom: 5px;
     }
 
@@ -281,4 +281,54 @@ ul ul a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.brief-intro .card {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.brief-intro-img {
+    height: 200px;
+    width: 100%;
+}
+
+.brief-intro-text {
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.brief-intro-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.brief-intro:hover .card {
+  opacity: 0.3;
+}
+
+.brief-intro:hover .brief-intro-middle {
+  opacity: 1;
+}
+
+.brief-intro-middle button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.brief-intro-middle button:hover {
+  background-color: darkgreen;
+  color: white;
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
 }
