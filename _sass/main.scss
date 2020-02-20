@@ -4,14 +4,46 @@
 body {
     font-family: '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
     background: #fafafa;
+    color: #333;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 p {
     font-family: '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
     font-size: 1em;
-    font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+}
+
+li > a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+li > a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+li > strong {
+    font-weight: 600;
+}
+
+li {
+    font-weight: 300;
 }
 
 a, a:hover, a:focus {
