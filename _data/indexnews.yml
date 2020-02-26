@@ -1,0 +1,88 @@
+- group: ArdaNEWS
+  groupIcon: fa fa-newspaper
+  detailsIcon: far fa-comment-alt
+  details:
+  - title: 【最新资讯】组长在搞大事，详见……
+    url: /
+  - title: 【听风说雨】上个月的新闻出了吗？
+    url: /
+  - title: 组长被称为灰袍巫师，其因何在？
+    url: /
+  - title: 今天也在吹爆美编！
+    url: /
+  - title: 新闻组疯狂推送译林，是不是又拐了新人！
+    url: /
+- group: BagEnd字幕组
+  groupIcon: fas fa-dungeon
+  detailsIcon: fas fa-leaf
+  details:
+  - title: 字母组将于近日放出大新闻
+    url: /
+  - title: 字幕组宣布将翻译古早动画片
+    url: /
+  - title: 【最新资讯】播客授权
+    url: /
+  - title: 开工油管快乐科普
+    url: /
+- group: 魔戒中文维基
+  groupIcon: fas fa-ring
+  detailsIcon: fas fa-paper-plane
+  details:
+  - title: 多谷大今天扎双马尾了吗
+    url: /
+  - title: 今天灰机的安卓版APP出了吗
+    url: /
+  - title: 今天菠萝更新了！
+    url: /
+  - title: 今天我拖稿了！
+    url: /
+- group: 南外托尔金社
+  groupIcon: fab fa-centos
+  detailsIcon: fab fa-pagelines
+  details:
+  - title: 活动宣传
+    url: /
+  - title: 校园活动宣传
+    url: /
+  - title: 读书活动
+    url: /
+- group: 指环王百度贴吧
+  groupIcon: fab fa-tumblr
+  detailsIcon: fab fa-canadian-maple-leaf
+  details:
+  - title: 今年除夕有爆吧吗
+    url: /
+  - title: 今天贴吧恢复旧贴了吗
+    url: /
+  - title: 今天盗门大翻译了吗
+    url: /
+- group: 中土con
+  groupIcon: fas fa-store-alt
+  detailsIcon: fas fa-walking
+  details:
+  - title: 往期内容回顾
+    url: /
+  - title: 活动报名
+    url: /
+  - title: 宣传
+    url: /
+- group: 中土相关墙
+  groupIcon: fas fa-warehouse
+  detailsIcon: fas fa-paint-roller
+  details:
+  - title: 墙墙最可爱了！
+    url: /
+  - title: 墙墙今天也在等稿
+    url: /
+  - title: 墙墙生日快乐
+    url: /
+- group: 中洲历史研讨群
+  groupIcon: fas fa-mortar-pestle
+  detailsIcon: far fa-comment-dots
+  details:
+  - title: 今天抓讲座了吗
+    url: /
+  - title: 今天打卡了吗
+    url: /
+  - title: 今天算命了吗
+    url: /
