@@ -1,0 +1,40 @@
+<!-- 这里是滚动新闻条，只需要修改indexnews.yml里的内容 -->
+<div class="container-fluid">
+	<div class="row">
+		{% for news in site.data.indexnews %}
+		<div class="col-sm-12 col-md-6 col-xl-4">
+			<div class="panel panel-default index-news-panel">
+				<div class="panel-heading row">
+					<h5><i class="{{ news.groupIcon }}"></i> {{ news.group }}</h5>
+					<div class="button-right">
+						<button class="news-page no-outLine prev">
+							<i class="fas fa-angle-up"></i>
+						</button>
+						<button class="news-page next">
+							<i class="fas fa-angle-down"></i>
+						</button>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xl-11">
+							<ul class="demo1">
+								{% for item in news.details %}
+									<li>
+										<table cellpadding="4" class="table-hover index-news-item">
+											<tr>
+												<td width="10%"><i class="{{ news.detailsIcon }}"></i></td>
+												<td class="index-new-title"><a href="{{ item.url }}">{{ item.title }}</a></td>
+											</tr>
+										</table>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>					
