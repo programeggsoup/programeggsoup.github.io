@@ -48,4 +48,4 @@ categories: 魔戒中文维基 简介
 
 ## 主要成员
 <!-- 成员信息，通过导入personCard模板+组成员信息_data/groupMember/xxxx.yml -->
-{% include personCard.html content=site.data.groupMember.lotrchinesewiki %}
+{% include personCardRound.html content=site.data.groupMember.lotrchinesewikiMember %}
