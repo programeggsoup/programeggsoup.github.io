@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: ArdaNEWS
+title: ArdaNEWS Studio
 author: 天洛_奇
 banner: /images/arda-news/banner.png
 date:   2020-02-20 01:04:00 +0800

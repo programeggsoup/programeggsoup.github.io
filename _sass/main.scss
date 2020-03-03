@@ -322,7 +322,7 @@ ul ul a {
 
 .brief-intro-img {
     height: 200px;
-    width: 100%;
+    width: 100%; 
 }
 
 .brief-intro-text {
@@ -369,10 +369,17 @@ ul ul a {
 
 .person-card {
     font-size: 0.9em;
-    margin: 10px;
-    border-radius: 5px;
+    margin: 15px 0;
+    border-radius: 10px;
     .card-img-left {
-        border-radius: 5px 0px 0px 5px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .card-body.person-card-body {
+        margin-left: -25px;
+    }
+    .person-card-img{
+        display: flex;
+        align-items: center;
     }
 }
 .person-card:hover {
@@ -387,7 +394,7 @@ ul ul a {
     font-size: 0.9em;
     border-radius: 9999px;
     .card-text {
-        margin: 10px 0px;
+        margin: 10px 10px 10px -15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
