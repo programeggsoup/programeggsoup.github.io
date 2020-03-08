@@ -1,77 +1,18 @@
 @import 'default';
-@import 'blog', 'about';
+
+// Spring 
+@include themable(#730216, #bf0536, #f34b88, #ee8fb1, #f1f1f1, #f2f2f2, #333, #f3f3f3);
+// Summer @include themable(#2a364e, #6a894e, #627295, #8da176, #dfebf9, #f2f2f2, #333, #f3f3f3);
+// Autumn @include themable(#be881e, #d9ad30, #f1de78, #f2efac, #f4efcf, #f2f2f2, #333, #f3f3f3);
+// Winter @include themable(#001040, #7693a7, #b1c7da, #e0e8f3, #f1f1f1, #f2f2f2, #333, #f3f3f3);
+// Middle-earth @include themable(#385816, #d9a504, #87a712, #efcb02, #f1f1f1, #f2f2f2, #333, #f3f3f3);
 
 
-@include themable(#2a364e, #6a894e, #627295, #8da176, #dfebf9, #f2f2f2, #333, #f3f3f3);
-
-
-
-﻿.glyphicon
-{
-    margin-right:4px !important; /*override*/
-}
-
-.pagination .glyphicon
-{
-    margin-right:0px !important; /*override*/
-}
-
-.pagination a
-{
-    color:#555;
-}
+﻿
 
 
 
-.brief-intro .card {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    margin-bottom: 30px;
-}
 
-.brief-intro-img {
-    height: 200px;
-    width: 100%; 
-}
-
-.brief-intro-text {
-    height: 150px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.brief-intro-middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.brief-intro:hover .card {
-  opacity: 0.3;
-}
-
-.brief-intro:hover .brief-intro-middle {
-  opacity: 1;
-}
-
-.brief-intro-middle button {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.brief-intro-middle button:hover {
-  background-color: darkgreen;
-  color: white;
-  box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
-}
 
 .important-event thead tr th:first-child {
     width: 20%;
@@ -92,7 +33,7 @@
         display: flex;
         align-items: center;
     }
-}
+} 
 .person-card:hover {
         opacity: 0.4;
         filter: sepia(50%) blur(1px);
