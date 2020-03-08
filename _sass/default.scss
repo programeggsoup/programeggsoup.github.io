@@ -1,4 +1,5 @@
 @import 'navLeft', 'indexblog', 'indexnews';
+@import 'blog', 'briefinfo';
 
 @mixin themable($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary) {
     body {
@@ -55,6 +56,10 @@
         align-items: stretch;
     }
 
+    #content {
+        width: 100%;
+    }
+
     .carousel.slide {
         margin-bottom: 20px;
     }
@@ -68,4 +73,7 @@
 
     // Index News
     @include indexnews($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary);
+
+    // Brief Info
+    @include briefinfo($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary);
 }
