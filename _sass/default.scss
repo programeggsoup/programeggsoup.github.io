@@ -76,4 +76,7 @@
 
     // Brief Info
     @include briefinfo($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary);
+
+    // Blog
+    @include blog($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary);
 }
