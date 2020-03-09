@@ -1,1 +1,72 @@
-// blog
+@mixin blog($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary) {
+	
+	.blog-title {
+		color: $primary;
+		font-weight: 500;
+	}
+
+	hr.aboutus {
+		border : 0;
+		height: 2px; 
+		margin-top: -15px;
+		background: linear-gradient(to left, $main-bg 0%, $primary 100%, $primary-light 70%); 
+	}
+
+	.blog {
+		h2, h3, h4, h5, h6 {
+			color: $primary;
+			font-weight: 400;
+		}
+
+		.important-event thead tr th:first-child {
+		    width: 20%;
+		    min-width: 150px;
+		}
+
+		.person-card {
+		    font-size: 0.9em;
+		    margin: 15px 0;
+		    border-radius: 10px;
+		    .card-img-left {
+		        border-radius: 10px 0px 0px 10px;
+		    }
+		    .card-body.person-card-body {
+		        margin-left: -25px;
+		    }
+		    .person-card-img{
+		        display: flex;
+		        align-items: center;
+		    }
+		} 
+		.person-card:hover {
+		        opacity: 0.4;
+		        filter: sepia(50%) blur(1px);
+		        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+
+		.person-card-round {
+		    margin: 20px 0;
+		    font-size: 0.9em;
+		    border-radius: 9999px;
+		    .card-text {
+		        margin: 10px 10px 10px -15px;
+		        display: flex;
+		        flex-direction: column;
+		        justify-content: center;
+		    }
+		    .card-img-left {
+		        border-radius: 9999px 0px 0px 9999px;
+		    }
+		}
+		.person-card-round:hover {
+		    opacity: 0.4;
+		    filter: sepia(50%) blur(1px);
+		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		
+	}
+
+	
+}

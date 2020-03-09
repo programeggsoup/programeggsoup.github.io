@@ -2,75 +2,7 @@
 
 // Spring @include themable(#730216, #bf0536, #f34b88, #ee8fb1, #f1f1f1, #f2f2f2, #333, #f3f3f3);
 // Summer @include themable(#2a364e, #6a894e, #627295, #8da176, #dfebf9, #f2f2f2, #333, #f3f3f3);
-// Autumn @include themable(#be881e, #d9ad30, #f1de78, #f2efac, #f4efcf, #f2f2f2, #333, #f3f3f3);
-// Winter 
-@include themable(#001040, #7693a7, #b1c7da, #e0e8f3, #f1f1f1, #f2f2f2, #333, #f3f3f3);
+// Autumn 
+@include themable(#be881e, #d9ad30, #f1de78, #f2efac, #f4efcf, #f2f2f2, #333, #f3f3f3);
+// Winter @include themable(#001040, #7693a7, #b1c7da, #e0e8f3, #f1f1f1, #f2f2f2, #333, #f3f3f3);
 // Middle-earth @include themable(#385816, #d9a504, #87a712, #efcb02, #f1f1f1, #f2f2f2, #333, #f3f3f3);
-
-
-﻿
-
-
-
-
-
-.important-event thead tr th:first-child {
-    width: 20%;
-    min-width: 150px;
-}
-
-.person-card {
-    font-size: 0.9em;
-    margin: 15px 0;
-    border-radius: 10px;
-    .card-img-left {
-        border-radius: 10px 0px 0px 10px;
-    }
-    .card-body.person-card-body {
-        margin-left: -25px;
-    }
-    .person-card-img{
-        display: flex;
-        align-items: center;
-    }
-} 
-.person-card:hover {
-        opacity: 0.4;
-        filter: sepia(50%) blur(1px);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-.person-card-round {
-    margin: 20px 0;
-    font-size: 0.9em;
-    border-radius: 9999px;
-    .card-text {
-        margin: 10px 10px 10px -15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .card-img-left {
-        border-radius: 9999px 0px 0px 9999px;
-    }
-}
-.person-card-round:hover {
-        opacity: 0.4;
-        filter: sepia(50%) blur(1px);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-hr.aboutus { 
-  border : 0;
-  height: 2px; 
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
-}
-hr.aboutus:after { 
-  content: '\002735'; 
-  display: inline-block; 
-  position: relative; 
-  top: -1.5em; 
-  left: 1em;
-  font-size: 2em; 
-}
