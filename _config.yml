@@ -28,9 +28,16 @@ twitter_username: tolkien_society_chinese_smial
 github_username:  programeggsoup
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+
+timezone: China
+encoding: UTF-8
+future:   true
+lsi:      true
+feedurl:  "http://programeggsoup.github.io"
+gems:
+    - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
