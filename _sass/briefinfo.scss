@@ -80,6 +80,7 @@
 				color: $text-secondary;
 				opacity: 1;
 				box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+				transition: all 0.2s;
 			}
 		}
 	} 
@@ -87,8 +88,9 @@
 	.brief-intro:hover {
 		.card {
 			opacity: 0.3;
-			filter: blur(4px);
-			-webkit-filter: blur(4px);
+			filter: sepia(50%) blur(4px);
+			-webkit-filter: sepia(50%) blur(4px);
+			transition: all 0.2s;
 		}
 		.brief-intro-middle {
 			opacity: 1;

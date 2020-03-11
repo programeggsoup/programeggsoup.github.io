@@ -27,6 +27,10 @@
 			    	$('#sidebar').removeClass('active');
 			    });
 
+			    $('.pop').popover({
+				    container: 'body'
+				})
+
 			});
 
 		</script>
@@ -48,6 +52,9 @@
 						{{ content }}
 					</main>
 				</div>
+			
+				<!-- footer  -->
+				{% include footer.html %}
 			</div>
 		</div>
     </body>

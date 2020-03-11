@@ -6,6 +6,7 @@
 		    margin: 20px 0;
 		}
 		.card.card-index:hover {
+			transition: all 0.2s;
 		    color: $text-secondary;
 		    background-color: $secondary;
 		    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);

@@ -31,7 +31,7 @@ github_username:  programeggsoup
 plugins:
   - jekyll-feed
 
-timezone: China
+#timezone: China
 encoding: UTF-8
 future:   true
 lsi:      true

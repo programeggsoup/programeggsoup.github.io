@@ -1,5 +1,5 @@
 @import 'navLeft', 'indexblog', 'indexnews';
-@import 'blog', 'briefinfo';
+@import 'blog', 'briefinfo', 'footer';
 
 @mixin themable($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary) {
     body {
@@ -38,6 +38,7 @@
         a:hover {
             color: $primary-light;
             text-decoration: underline;
+            transition: all 0.2s;
         }
         strong {
             font-weight: 600;
@@ -79,4 +80,7 @@
 
     // Blog
     @include blog($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary);
+
+    // Footer
+    @include footerStyle($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary);
 }

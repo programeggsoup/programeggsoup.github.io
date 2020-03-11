@@ -1,0 +1,36 @@
+links:
+  - name: ArdaNEWS Studio
+    link: https://www.weibo.com/u/7381386679
+    icon: fa-globe-asia
+  - name: Tolkien Society
+    link: https://www.tolkiensociety.org/
+    icon: fa-globe-europe
+  - name: 袋底洞字幕组
+    link: https://www.weibo.com/u/7276464524
+    icon: fa-globe-asia
+  - name: 魔戒中文维基
+    link: https://lotr.huijiwiki.com/wiki/
+    icon: fa-globe-asia
+  - name: 指环王百度贴吧
+    link: https://tieba.baidu.com/f?kw=%E6%8C%87%E7%8E%AF%E7%8E%8B&ie=utf-8
+    icon: fa-globe-asia
+  - name: 中土Con
+    link: https://www.weibo.com/zsm20151220
+    icon: fa-globe-asia
+  - name: 中土相关墙
+    link: QQ3246869494
+    icon: fa-globe-asia
+contacts:
+  - name: 天洛_奇
+    ways:
+      - way: QQ：
+        info: 1543206157
+      - way: 邮箱：
+        info: tianluoqi42@gmail.com
+  - name: 起名
+    ways:
+      - way: 邮箱：
+        info: leopoldbreak@126.com
+developers:
+  - name: 小精灵
+  - name: 船王
