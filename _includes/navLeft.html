@@ -1,8 +1,8 @@
 <!-- 这里是所有PC端的导航 -->
 {% assign config = site.data.config %}
-<nav id="sidebar" class="active">
+<nav id="sidebar" class="active fixed-left">
 	<div class="sidebar-header" id="sidebarCollapse" style="cursor: pointer;" >
-		<h3>导览</h3>
+		<span>导览</span>
 		<strong><i class="fa fa-bars"></i></strong>
 	</div>
 
@@ -44,10 +44,19 @@
 			</ul>
 		</li>
 		<li>
-			<a href="{{ config.firstLevel | append: '/download.html' }}">
+			<a href="#downloads" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle must-inactive">
 			    <i class="fas fa-download"></i>
-			    <span>往期内容下载</span>
+			    <span>资源下载</span>
 			</a>
+			<ul class="collapse list-unstyled" id="downloads">
+				{% for item in site.data.download %}
+			 		<li>
+			 			<a href="{{ config.firstLevel | append: config.downloadLevel | append: item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+				    		{{ item.name }}
+				    	</a>
+			 		</li>
+				{% endfor %}
+			</ul>
 		</li>
 		<li>
 			<a href="{{ config.firstLevel | append: '/about.html' }}" >
@@ -55,11 +64,11 @@
 			    <span>关于我们</span>
 			</a>
 		</li>
-		<li>
+		<!-- <li>
 			<a href="{{ config.firstLevel | append: '/suggestions.html' }}" >
 				<i class="fas fa-envelope"></i>
 				<span>意见箱</span>
 			</a>
-		</li>
+		</li> -->
 	</ul>
 </nav>

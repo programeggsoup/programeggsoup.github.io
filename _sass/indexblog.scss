@@ -1,0 +1,14 @@
+@mixin indexblog($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary) {
+	.index-card-hover {
+
+		.card.card-index {
+		    height: 80%;
+		    margin: 20px 0;
+		}
+		.card.card-index:hover {
+		    color: $text-secondary;
+		    background-color: $secondary;
+		    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+		}
+	}
+}

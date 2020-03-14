@@ -1,0 +1,58 @@
+@mixin indexnews($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary) {
+
+	.panel ul {
+	    padding:0px;
+	    margin:0px;
+	    list-style:none;
+	}
+
+	.index-news-panel {
+	    margin: 20px 0; 
+	    border: 1px dashed $secondary !important; 
+	    border-radius: 10px; 
+	    padding: 20px 30px 10px 40px;
+
+	    .panel-heading {
+	    	display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		    color: $secondary;
+
+		    .button-right {
+		    	.news-page {
+				    text-decoration: none;
+				    border-radius: 5px;
+				    background-color: $main-bg;
+				    color: $secondary;
+				    border: none;
+				    margin: 0 5px;
+				}
+				.news-page:hover {
+				    color: $text-secondary;
+				    background-color: $secondary;
+				}
+		    }
+	    }
+
+	    .panel-body {
+			.index-news-item {
+			    width: 100%;
+			    padding: 10px;
+			    border-bottom: 1px solid $secondary-light !important;
+
+			    .index-new-title > a {
+				    text-align: left !important;
+				    overflow: hidden;
+				    white-space: nowrap;
+				    text-overflow: ellipsis;
+				    color: $text-primary;
+				    text-decoration: none !important;
+				}
+
+				tr > td > i {
+		    		color: $secondary !important;
+		    	}
+			}
+		}
+	}
+}
