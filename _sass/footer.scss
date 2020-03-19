@@ -1,0 +1,55 @@
+@mixin footerStyle($primary, $secondary, $primary-light, $secondary-light, $tertiary, $main-bg, $text-primary, $text-secondary) {
+	
+	.footer {
+		background-color: $primary;
+		color: $primary-light;
+		padding: 0 20px;
+		margin-top: 60px;
+
+		a {
+			color: $primary-light;
+		}
+
+		a:hover {
+			color: $text-secondary;
+            text-decoration: none;
+		}
+
+		ul.subitem:before {
+		    content: attr(aria-label);
+		    font-weight: 500;
+		    margin-left: -5px
+		}
+
+		ul.subitem {
+		    li {
+		    	margin-left: 20px;
+		    }
+		}
+
+		.outer-board {
+			margin: 40px 0;
+
+			h5 {
+				.title {
+					margin: 0 10px 0 5px;
+				}
+			}
+			hr {
+				border : 0;
+				height: 2px; 
+				margin-top: -2px;
+				background: linear-gradient(to right, $primary-light 0%, $primary 100%, $primary-light 70%); 
+			}
+		}
+	}
+
+	.popover {
+		.popover-body {
+			background-color: $primary-light;
+			color: $text-secondary;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+	}
+	
+}
