@@ -1,0 +1,46 @@
+<!-- 这里是放在所有页面底部的页脚 -->
+{% assign footer = site.data.footer %}
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-xl-4">
+				<div class="links outer-board">
+					<h5><i class="fas fa-link title small"></i>友情站点</h5><hr>
+					<ul> 
+					{% for item in footer.links %}
+						{% if item.link contains "http" %}
+							<li><a href="{{ item.link }}" target="_blank">{{ item.name }} <i class="fas {{ item.icon }} small"></i></a></li>
+						{% else %}
+							<li>
+								<a class="pop" data-toggle="popover" data-content="{{ item.link }}">{{ item.name }} <i class="fas {{ item.icon }} small"></i></a>
+							</li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-xl-4">
+				<div class="contacts outer-board">
+					<h5><i class="far fa-handshake title small"></i>联系我们</h5><hr>
+					{% for item in footer.contacts %}
+					<ul class="subitem" aria-label="{{ item.name }}"> 
+						{% for subitem in item.ways %}
+					    <li>{{ subitem.way }}<a href="{{ subitem.info }}">{{ subitem.info }}</a></li>
+					    {% endfor %}
+					</ul>
+					{% endfor %}
+				</div>				
+			</div>
+			<div class="col-12 col-sm-6 col-xl-4">
+				<div class="developers outer-board">
+					<h5><i class="fas fa-code title small"></i>开发人员</h5><hr>
+					<ul> 
+					{% for item in footer.developers %}
+						<li>{{ item.name }}</li>
+					{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
